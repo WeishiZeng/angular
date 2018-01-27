@@ -26,6 +26,7 @@ import { ContactComponent } from './contact/contact.component';
 
 //service imports
 import { DishService } from './services/dish.service';
+import { PromotionService } from './services/promotion.service';
 
 //module imports
 import { AppRoutingModule } from './app-routing/app-routing.module';
@@ -49,7 +50,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     FlexLayoutModule, BrowserModule, FormsModule, HttpModule,
     FlexLayoutModule, AppRoutingModule
   ],
-  providers: [DishService],
+  providers: [DishService, PromotionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
