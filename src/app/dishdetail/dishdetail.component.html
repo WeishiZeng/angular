@@ -18,8 +18,9 @@
       <p>{{dish.description}}</p>
     </mat-card-content>
     <mat-card-actions>
-      <button matButton>LIKE</button>
-      <button matButton>SHARE</button>
+      <button mat-button (click)="goBack()">BACK</button>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
     </mat-card-actions>
   </mat-card>
 
