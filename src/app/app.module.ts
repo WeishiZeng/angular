@@ -7,8 +7,7 @@ import { MatButtonModule, MatCheckboxModule, MatDatepickerModule, MatFormFieldMo
   MatInputModule, MatRadioModule, MatSelectModule, MatSliderModule,
   MatSlideToggleModule, MatToolbarModule, MatListModule, MatGridListModule,
   MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule } from '@angular/material';
-
-import { FormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 //js dependency imports, hammerjs for touch
@@ -51,7 +50,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     MatSlideToggleModule, MatToolbarModule, MatListModule, MatGridListModule,
     MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule,
     FlexLayoutModule, BrowserModule, FormsModule, HttpModule,
-    FlexLayoutModule, AppRoutingModule, BrowserAnimationsModule
+    FlexLayoutModule, AppRoutingModule, BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [DishService, PromotionService, LeaderService],
   bootstrap: [AppComponent],
