@@ -23,6 +23,9 @@
       <button mat-button>SHARE</button>
     </mat-card-actions>
   </mat-card>
+  <div [hidden]="dish">
+    <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+  </div>
 
 
   <mat-list fxFlex="40" *ngIf="dish">
@@ -33,5 +36,8 @@
       <p matLine>-- {{record.author}} {{record.date | date}}</p>
     </mat-list-item>
   </mat-list>
+  <div [hidden]="dish">
+    <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+  </div>
 
 </div>
