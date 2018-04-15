@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Dish } from '../shared/dish';
 import { DISHES } from '../shared/dishes';
 import { Observable } from 'rxjs/Observable';
+
+//import for side effect only, to patch Observable for more functions
 // import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/delay';
 import 'rxjs/add/observable/of';
@@ -34,5 +36,9 @@ export class DishService {
     //   // Simulate server latency with 2 second delay
     //   setTimeout(() => resolve(DISHES.filter((dish) => dish.featured)[0]), 2000);
     // });
+  }
+
+  getDishIds(): Observable<number[]> {
+    return Observable.of(DISHES.map(dish => dish.id ));
   }
 }
